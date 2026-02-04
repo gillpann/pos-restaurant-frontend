@@ -10,20 +10,20 @@ body {
 
 :root {
   /* BACKGROUND LEVEL */
-  --bg-page: #070F2B;    
-  --bg-header: #0B1340;   
-  --bg-card: #0E1649;     
-  --bg-item: #121D5E;     
+  --bg-page:#0E0E11;   
+  --bg-header:#15151C;  
+  --bg-card:#1B1B23;  
+  --bg-item:#23232E;  
 
   /* PRIMARY */
-  --primary: #535C91;
-  --primary-hover: #6B74B5;
+  --primary:#F97316;  
+  --primary-hover:#FB923C;
 
   /* TEXT */
-  --text-main: #F8FAFF;
-  --text-muted: #A3AED0;
+  --text-main:#F5F7FA;
+  --text-muted: #9CA3AF;
 
   /* STATUS */
-  --success: #22C55E;
-  --warning: #FACC15;
+  --success: #22C55E; 
+  --warning: #EAB308; 
 }
