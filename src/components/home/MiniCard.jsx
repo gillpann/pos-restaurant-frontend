@@ -1,20 +1,43 @@
 import React from 'react'
 
-const MiniCard = ({title, icon, number, footerNum}) => {
+const MiniCard = ({ title, icon, number, footerNum }) => {
+  const isEarning = title === "Total Earnings"
+
   return (
-    <div className='bg-[#1a1a1a] py-3 px-3 rounded-lg w-[50%]'>
-        <div className='flex items-start justify-between'>
-            <h1 className='text-[#f5f5f5] text-lg font-semibold tracking-wide'>{title}</h1>
-            <button className={`${title === 'Total Earnings' ? 'bg-[#02ca3a]' : 'bg-[#f6b100]'} 
-            p-3 rounded-lg text-[#f5f5f5] text-2xl`}>{icon}</button>
+    <div
+      className={`
+        bg-bg-card w-[50%] rounded-xl p-4
+        border-l-4 ${isEarning ? 'border-success' : 'border-warning'}
+        shadow-md shadow-black/20
+      `}
+    >
+      <div className='flex items-center justify-between'>
+        <h1 className='text-text-muted text-sm font-medium tracking-wide'>
+          {title}
+        </h1>
+
+        <div
+          className={`
+            p-3 rounded-lg text-xl
+            ${isEarning
+              ? 'bg-success/20 text-success'
+              : 'bg-warning/20 text-warning'}
+          `}
+        >
+          {icon}
         </div>
-        <div>
-            <h1 className='text-[#f5f5f5] text-4xl font-bold mt-4'>{
-            title === "Total Earnings" ? `Rp${number}` : number}</h1>
-            <h1 className='text-[#f5f5f5] text-lg mt-2'><span className='text-[#02ca3a]'>{footerNum}%</span> than yesterday</h1>            
-        </div>
+      </div>
+
+      <h1 className='text-text-main text-4xl font-bold mt-4'>
+        {isEarning ? `Rp${number}` : number}
+      </h1>
+
+      <p className='text-text-muted text-sm mt-2'>
+        <span className='text-success font-semibold'>{footerNum}%</span> than yesterday
+      </p>
     </div>
   )
 }
+
 
 export default MiniCard

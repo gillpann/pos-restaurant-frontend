@@ -25,12 +25,12 @@ const Greetings = () => {
   return (
     <div className='flex justify-between items-center px-8 mt-3'>
         <div>
-            <h1 className='text-[#f5f5f5] text-2xl mb-2 font-semibold tracking-wide'>Good Morning, Gilvan</h1>
-            <p className='text-[#ababab] text-sm'>Give your best services for customers 😄.</p>
+            <h1 className='text-text-main text-2xl mb-2 font-semibold tracking-wide'>Good Morning, Gilvan</h1>
+            <p className='text-text-muted text-sm'>Give your best services for customers 😄.</p>
         </div>
         <div>
-            <h1 className='text-[#f5f5f5] text-3xl font-bold tracking-wide w-[130px]'>{formatTime(dateTime)}</h1>
-            <p className='text-[#ababab] text-sm'>{formatDate(dateTime)}</p>
+            <h1 className='text-text-main text-3xl font-bold tracking-wide w-[130px]'>{formatTime(dateTime)}</h1>
+            <p className='text-text-muted text-sm'>{formatDate(dateTime)}</p>
         </div>
     </div>
   )

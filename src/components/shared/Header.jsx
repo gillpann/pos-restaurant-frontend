@@ -6,33 +6,33 @@ import logo from "../../assets/images/logo.png"
 
 const Header = () => {
   return (
-    <header className='flex justify-between items-center py-3 px-8 bg-[#1a1a1a]'>
+    <header className='flex justify-between items-center py-3 px-8 bg-bg-header'>
         {/* Logo */}
         <div className='flex items-center gap-2'>
             <img src={logo} className='h-6 w-6' alt="resto logo" />
-            <h1 className='text-lg font-semibold text-[#f5f5f5]'>Resto</h1>
+            <h1 className='text-lg font-semibold text-text-main'>Resto</h1>
         </div>
 
         {/* Search */}
-        <div className='flex items-center gap-4 bg-[#1f1f1f] rounded-[20px] px-4 py-2 w-[450px]'>
-            <FaSearch className='text-[#f5f5f5]' />
+        <div className='flex items-center gap-4 bg-bg-card rounded-[20px] px-4 py-2 w-[450px]'>
+            <FaSearch className='text-text-main' />
             <input 
                 type='text'
                 placeholder='Search...'
-                className='bg-[#1f1f1f] outline-none text-[#f5f5f5]'
+                className='bg-bg-card outline-none text-text-main'
             />
         </div>
 
         {/* Logged User Details */}
         <div className='flex items-center gap-4'>
-            <div className='text-[#1f1f1f] rounded-[15px] p-2 cursor-pointer'>
-                <FaBell className='text-[#f5f5f5] text-2xl' />
+            <div className='rounded-[15px] p-2 cursor-pointer'>
+                <FaBell className='text-text-main text-2xl' />
             </div>
             <div className='flex items-center gap-3 cursor-pointer '>
-                <FaUserCircle className='text-[#f5f5f5] text-4xl' />
+                <FaUserCircle className='text-text-main text-4xl' />
                 <div className='flex flex-col items-start'>
-                    <h1 className='text-md text-[#f5f5f5] font-semibold'>Ahmad Gilvan</h1>
-                    <p className='text-xs text-[#ababab] font-medium'>Admin</p>
+                    <h1 className='text-md text-text-main font-semibold'>Ahmad Gilvan</h1>
+                    <p className='text-xs text-text-muted font-medium'>Admin</p>
                 </div>
             </div>
         </div>

@@ -10,7 +10,7 @@ import { GrInProgress } from "react-icons/gr";
 
 const Home = () => {
   return (
-    <section className='bg-[#1f1f1f] h-[calc(100vh-5rem)] overflow-hidden flex gap-3'>
+    <section className='bg-bg-page h-[calc(100vh-5rem)] overflow-hidden flex gap-3'>
       {/* Left Section */}
       <div className='flex-[3]'>
         <Greetings />

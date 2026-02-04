@@ -7,3 +7,23 @@
 body {
   font-family: 'Inter', sans-serif;
 }
+
+:root {
+  /* BACKGROUND LEVEL */
+  --bg-page: #070F2B;    
+  --bg-header: #0B1340;   
+  --bg-card: #0E1649;     
+  --bg-item: #121D5E;     
+
+  /* PRIMARY */
+  --primary: #535C91;
+  --primary-hover: #6B74B5;
+
+  /* TEXT */
+  --text-main: #F8FAFF;
+  --text-muted: #A3AED0;
+
+  /* STATUS */
+  --success: #22C55E;
+  --warning: #FACC15;
+}
