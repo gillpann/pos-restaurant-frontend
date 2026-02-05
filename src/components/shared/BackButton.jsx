@@ -7,7 +7,7 @@ const BackButton = () => {
     const navigate = useNavigate();
 
   return (
-    <button onClick={() => navigate(-1)} className='bg-bg-item hover:bg-bg-card transition p-3 text-xl font-bold rounded-full text-text-main'>
+    <button onClick={() => navigate(-1)} className='bg-bg-item hover:bg-bg-card transition p-2 text-xl font-bold rounded-full text-text-main'>
         <IoArrowBackOutline />
     </button>
   )
