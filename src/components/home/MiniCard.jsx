@@ -29,7 +29,7 @@ const MiniCard = ({ title, icon, number, footerNum }) => {
       </div>
 
       <h1 className='text-text-main text-4xl font-bold mt-4'>
-        {isEarning ? `Rp${number}` : number}
+        {isEarning ? `$${number.toFixed(2)}` : number.toFixed(2)}
       </h1>
 
       <p className='text-text-muted text-sm mt-2'>
