@@ -86,118 +86,118 @@ export const tables = [
   ];
 
 export const startersItem = [
-    {
-      id: 1,
-      name: "Paneer Tikka",
-      price: 250,
-      category: "Vegetarian"
-    },
-    {
-      id: 2,
-      name: "Chicken Tikka",
-      price: 300,
-      category: "Non-Vegetarian"
-    },
-    {
-      id: 3,
-      name: "Tandoori Chicken",
-      price: 350,
-      category: "Non-Vegetarian"
-    },
-    {
-      id: 4,
-      name: "Samosa",
-      price: 100,
-      category: "Vegetarian"
-    },
-    {
-      id: 5,
-      name: "Aloo Tikki",
-      price: 120,
-      category: "Vegetarian"
-    },
-    {
-      id: 6,
-      name: "Hara Bhara Kebab",
-      price: 220,
-      category: "Vegetarian"
-    }
-  ];
-  
-export const mainCourse = [
   {
     id: 1,
-    name: "Butter Chicken",
-    price: 400,
-    category: "Non-Vegetarian"
-  },
-  {
-    id: 2,
-    name: "Paneer Butter Masala",
-    price: 350,
+    name: "Spring Rolls",
+    price: 5.5,
     category: "Vegetarian"
   },
   {
+    id: 2,
+    name: "Chicken Gyoza",
+    price: 6.5,
+    category: "Non-Vegetarian"
+  },
+  {
     id: 3,
-    name: "Chicken Biryani",
-    price: 450,
+    name: "Crispy Chicken Wings",
+    price: 7.5,
     category: "Non-Vegetarian"
   },
   {
     id: 4,
-    name: "Dal Makhani",
-    price: 180,
+    name: "French Fries",
+    price: 4.5,
     category: "Vegetarian"
   },
   {
     id: 5,
-    name: "Kadai Paneer",
-    price: 300,
-    category: "Vegetarian"
+    name: "Shrimp Tempura",
+    price: 8.0,
+    category: "Non-Vegetarian"
   },
   {
     id: 6,
-    name: "Rogan Josh",
-    price: 500,
+    name: "Garlic Bread",
+    price: 4.0,
+    category: "Vegetarian"
+  }
+];
+
+export const mainCourse = [
+  {
+    id: 1,
+    name: "Chicken Teriyaki",
+    price: 12.5,
     category: "Non-Vegetarian"
+  },
+  {
+    id: 2,
+    name: "Beef Black Pepper",
+    price: 14.0,
+    category: "Non-Vegetarian"
+  },
+  {
+    id: 3,
+    name: "Fried Rice Special",
+    price: 10.0,
+    category: "Non-Vegetarian"
+  },
+  {
+    id: 4,
+    name: "Pad Thai",
+    price: 11.5,
+    category: "Non-Vegetarian"
+  },
+  {
+    id: 5,
+    name: "Grilled Chicken Steak",
+    price: 15.0,
+    category: "Non-Vegetarian"
+  },
+  {
+    id: 6,
+    name: "Vegetable Stir Fry",
+    price: 9.5,
+    category: "Vegetarian"
   }
 ];
 
 export const beverages = [
   {
     id: 1,
-    name: "Masala Chai",
-    price: 50,
-    category: "Hot"
+    name: "Iced Lemon Tea",
+    price: 3.5,
+    category: "Cold"
   },
   {
     id: 2,
-    name: "Lemon Soda",
-    price: 80,
+    name: "Thai Iced Tea",
+    price: 4.0,
     category: "Cold"
   },
   {
     id: 3,
-    name: "Mango Lassi",
-    price: 120,
+    name: "Fresh Orange Juice",
+    price: 4.5,
     category: "Cold"
   },
   {
     id: 4,
-    name: "Cold Coffee",
-    price: 150,
-    category: "Cold"
+    name: "Americano Coffee",
+    price: 3.0,
+    category: "Hot"
   },
   {
     id: 5,
-    name: "Fresh Lime Water",
-    price: 60,
-    category: "Cold"
+    name: "Cappuccino",
+    price: 4.0,
+    category: "Hot"
   },
   {
     id: 6,
-    name: "Iced Tea",
-    price: 100,
+    name: "Mineral Water",
+    price: 2.0,
     category: "Cold"
   }
 ];
@@ -205,38 +205,32 @@ export const beverages = [
 export const soups = [
   {
     id: 1,
-    name: "Tomato Soup",
-    price: 120,
-    category: "Vegetarian"
+    name: "Chicken Corn Soup",
+    price: 5.5,
+    category: "Non-Vegetarian"
   },
   {
     id: 2,
-    name: "Sweet Corn Soup",
-    price: 130,
+    name: "Miso Soup",
+    price: 4.5,
     category: "Vegetarian"
   },
   {
     id: 3,
-    name: "Hot & Sour Soup",
-    price: 140,
+    name: "Cream of Mushroom Soup",
+    price: 5.0,
     category: "Vegetarian"
   },
   {
     id: 4,
-    name: "Chicken Clear Soup",
-    price: 160,
+    name: "Tom Yum Soup",
+    price: 6.5,
     category: "Non-Vegetarian"
   },
   {
     id: 5,
-    name: "Mushroom Soup",
-    price: 150,
-    category: "Vegetarian"
-  },
-  {
-    id: 6,
-    name: "Lemon Coriander Soup",
-    price: 110,
+    name: "Vegetable Soup",
+    price: 4.0,
     category: "Vegetarian"
   }
 ];
@@ -244,26 +238,26 @@ export const soups = [
 export const desserts = [
   {
     id: 1,
-    name: "Gulab Jamun",
-    price: 100,
+    name: "Chocolate Lava Cake",
+    price: 6.5,
     category: "Vegetarian"
   },
   {
     id: 2,
-    name: "Kulfi",
-    price: 150,
+    name: "Cheesecake",
+    price: 6.0,
     category: "Vegetarian"
   },
   {
     id: 3,
-    name: "Chocolate Lava Cake",
-    price: 250,
+    name: "Ice Cream Sundae",
+    price: 5.0,
     category: "Vegetarian"
   },
   {
     id: 4,
-    name: "Ras Malai",
-    price: 180,
+    name: "Fruit Platter",
+    price: 4.5,
     category: "Vegetarian"
   }
 ];
@@ -272,20 +266,26 @@ export const pizzas = [
   {
     id: 1,
     name: "Margherita Pizza",
-    price: 350,
+    price: 10.0,
     category: "Vegetarian"
   },
   {
     id: 2,
-    name: "Veg Supreme Pizza",
-    price: 400,
-    category: "Vegetarian"
+    name: "Pepperoni Pizza",
+    price: 12.0,
+    category: "Non-Vegetarian"
   },
   {
     id: 3,
-    name: "Pepperoni Pizza",
-    price: 450,
+    name: "BBQ Chicken Pizza",
+    price: 13.5,
     category: "Non-Vegetarian"
+  },
+  {
+    id: 4,
+    name: "Veggie Supreme Pizza",
+    price: 11.5,
+    category: "Vegetarian"
   }
 ];
 
@@ -293,37 +293,25 @@ export const alcoholicDrinks = [
   {
     id: 1,
     name: "Beer",
-    price: 200,
+    price: 5.0,
     category: "Alcoholic"
   },
   {
     id: 2,
-    name: "Whiskey",
-    price: 500,
+    name: "Red Wine",
+    price: 7.5,
     category: "Alcoholic"
   },
   {
     id: 3,
-    name: "Vodka",
-    price: 450,
+    name: "Whiskey",
+    price: 8.0,
     category: "Alcoholic"
   },
   {
     id: 4,
-    name: "Rum",
-    price: 350,
-    category: "Alcoholic"
-  },
-  {
-    id: 5,
-    name: "Tequila",
-    price: 600,
-    category: "Alcoholic"
-  },
-  {
-    id: 6,
     name: "Cocktail",
-    price: 400,
+    price: 9.0,
     category: "Alcoholic"
   }
 ];
@@ -332,32 +320,26 @@ export const salads = [
   {
     id: 1,
     name: "Caesar Salad",
-    price: 200,
+    price: 7.0,
     category: "Vegetarian"
   },
   {
     id: 2,
     name: "Greek Salad",
-    price: 250,
+    price: 7.5,
     category: "Vegetarian"
   },
   {
     id: 3,
-    name: "Fruit Salad",
-    price: 150,
-    category: "Vegetarian"
-  },
-  {
-    id: 4,
     name: "Chicken Salad",
-    price: 300,
+    price: 8.5,
     category: "Non-Vegetarian"
   },
   {
-    id: 5,
+    id: 4,
     name: "Tuna Salad",
-    price: 350,
-  
+    price: 9.0,
+    category: "Non-Vegetarian"
   }
 ];
 

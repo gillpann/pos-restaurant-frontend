@@ -31,7 +31,7 @@ const OrderCard = () => {
         <hr className="w-full mt-4 border-t border-white/10" />
         <div className="flex items-center justify-between mt-4">
             <h1 className="text-text-main text-lg font-semibold">Total</h1>
-            <p className="text-text-main text-lg font-bold">Rp90.000</p>
+            <p className="text-text-main text-lg font-bold">$500</p>
         </div>
     </div>
   )
