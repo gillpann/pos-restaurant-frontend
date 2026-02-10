@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 
 const Greetings = () => {
 
+    const userData = useSelector(state => state.user);
     const [dateTime, setDateTime] = useState(new Date());
 
     useEffect(() => {
@@ -25,7 +27,7 @@ const Greetings = () => {
   return (
     <div className='flex justify-between items-center px-8 mt-3'>
         <div>
-            <h1 className='text-text-main text-2xl mb-2 font-semibold tracking-wide'>Good Morning, Gilvan</h1>
+            <h1 className='text-text-main text-2xl mb-2 font-semibold tracking-wide'>Good Morning, {userData.name || "Name"}</h1>
             <p className='text-text-muted text-sm'>Give your best services for customers 😄.</p>
         </div>
         <div>
