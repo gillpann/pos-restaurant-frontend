@@ -76,7 +76,7 @@ const Login = () => {
             </div>
 
             <button type='submit' disabled={!formData.email || !formData.password}
-            className="w-full mt-6 py-3 text-lg rounded-lg font-bold
+            className="w-full mt-6 py-3 text-lg rounded-lg font-bold text-text-main
             bg-primary hover:bg-primary-hover disabled:opacity-50 disabled:cursor-not-allowed"
             >
                 Sign in
