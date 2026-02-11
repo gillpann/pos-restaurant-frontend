@@ -2,6 +2,7 @@ import React from 'react'
 import { FaSearch } from "react-icons/fa";
 import { FaUserCircle } from "react-icons/fa";
 import { FaBell } from "react-icons/fa";
+import { MdDashboard } from "react-icons/md";
 import { IoLogOut } from "react-icons/io5";
 import logo from "../../assets/images/logo.png"
 import { useSelector } from 'react-redux';
@@ -36,7 +37,7 @@ const Header = () => {
   return (
     <header className='flex justify-between items-center py-3 px-8 bg-bg-header'>
         {/* Logo */}
-        <div className='flex items-center gap-2'>
+        <div onClick={() => navigate("/")} className='flex items-center gap-2 cursor-pointer'>
             <img src={logo} className='h-6 w-6' alt="resto logo" />
             <h1 className='text-lg font-semibold text-text-main'>Resto</h1>
         </div>
@@ -53,7 +54,14 @@ const Header = () => {
 
         {/* Logged User Details */}
         <div className='flex items-center gap-4'>
-            <div className='rounded-[15px] p-2 cursor-pointer'>
+            {
+                userData.role === "Admin" && (
+                    <div onClick={() => navigate('/dashboard')} className='bg-bg-item rounded-[15px] p-2 cursor-pointer hover:bg-bg-card transition-colors duration-200'>
+                        <MdDashboard className='text-text-main text-2xl' />
+                    </div>      
+                )
+            }
+            <div className='bg-bg-item rounded-[15px] p-2 cursor-pointer hover:bg-bg-card transition-colors duration-200'>
                 <FaBell className='text-text-main text-2xl' />
             </div>
             <div className='flex items-center gap-3 cursor-pointer '>
@@ -62,7 +70,7 @@ const Header = () => {
                     <h1 className='text-md text-text-main font-semibold'>{userData.name || "Name"}</h1>
                     <p className='text-xs text-text-muted font-medium'>{userData.role || "Role"}</p>
                 </div>
-                <IoLogOut onClick={handleLogout} className='text-text-main ml-2' size={40}/>
+                <IoLogOut onClick={handleLogout} className='text-text-main ml-2 hover:text-primary transition-colors duration-200' size={40}/>
             </div>
         </div>
     </header>

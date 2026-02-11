@@ -353,3 +353,56 @@ export const menus = [
   { id: 7, name: "Alcoholic Drinks", bgColor: "#3A2A30" ,icon: "🍺", items: alcoholicDrinks },
   { id: 8, name: "Salads", bgColor: "#2A4A3A" ,icon: "🥗", items: salads }
 ]
+
+export const metricsData = [
+  { title: "Today's Revenue", value: "$4,287.50", percentage: "18%", color: "#2E2F4A", isIncrease: true }, 
+  { title: "Total Orders", value: "127", percentage: "12%", color: "#2A3A3A", isIncrease: true }, 
+  { title: "Active Customers", value: "342", percentage: "8%", color: "#4A4028", isIncrease: true }, 
+  { title: "Avg Order Value", value: "$33.75", percentage: "5%", color: "#3A2A2A", isIncrease: false }, 
+];
+
+export const itemsData = [
+  { title: "Total Categories", value: "8", color: "#2B2A3A" }, 
+  { title: "Total Dishes", value: "50", percentage: "4%", color: "#2E3A2A", isIncrease: true }, 
+  { title: "Active Orders", value: "12", color: "#3A2A30" }, 
+  { title: "Total Tables", value: "10", color: "#2A4A3A"} 
+];
+
+export const orders = [
+  {
+    id: "101",
+    customer: "Ahmad Gilvan",
+    status: "Ready",
+    dateTime: "January 18, 2025 08:32 PM",
+    items: 8,
+    tableNo: 3,
+    total: 250.0,
+  },
+  {
+    id: "102",
+    customer: "John Doe",
+    status: "In Progress",
+    dateTime: "January 18, 2025 08:45 PM",
+    items: 5,
+    tableNo: 4,
+    total: 180.0,
+  },
+  {
+    id: "103",
+    customer: "Emma Smith",
+    status: "Ready",
+    dateTime: "January 18, 2025 09:00 PM",
+    items: 3,
+    tableNo: 5,
+    total: 120.0,
+  },
+  {
+    id: "104",
+    customer: "Chris Brown",
+    status: "In Progress",
+    dateTime: "January 18, 2025 09:15 PM",
+    items: 6,
+    tableNo: 6,
+    total: 220.0,
+  },
+];
