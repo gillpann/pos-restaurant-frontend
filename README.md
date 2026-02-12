@@ -1,16 +1,64 @@
-# React + Vite
+# 🍽️ POS Restaurant - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Point of Sale (POS) web application for restaurants built using React and Tailwind CSS.  
+This frontend communicates with a RESTful API built using the MERN stack.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## React Compiler
+- React (Vite)
+- Tailwind CSS
+- Redux Toolkit
+- Axios
+- React Router DOM
+- Notistack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🛒 Add and manage cart items
+- 🧾 Automatic bill calculation
+- 👤 Customer management
+- 📋 Order creation
+- ⚡ Fast and responsive UI
+- 🔄 Connected to Express REST API
+
+---
+
+
+## 🚀 Quick Start
+
+### Prerequisites
+- **Node.js (v16 or higher)**
+- **npm or yarn**
+
+### 1️⃣  Clone the repository:
+```bash
+git clone https://github.com/gillpann/pos-restaurant-frontend.git
+cd pos-restaurant-frontend
+```
+
+### 2️⃣  Install dependencies:
+```bash
+npm install  # or yarn install or pnpm install
+```
+
+### 3️⃣  Run the development server:
+```bash
+npm run dev  # or yarn dev or pnpm dev
+```
+
+---
+
+### Make sure backend server is running at:
+```bash
+http://localhost:8000
+```
+
+---
+
+## 👨‍💻 Author
+
+**Ahmad Gilvan**
